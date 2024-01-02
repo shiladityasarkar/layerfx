@@ -23,8 +23,6 @@ public class ImageData
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
-//	private String name;
-//	private String type;
 	@Lob
 	@Column(name="imageconv", columnDefinition="LONGBLOB")
 	private byte[] image_conv;
