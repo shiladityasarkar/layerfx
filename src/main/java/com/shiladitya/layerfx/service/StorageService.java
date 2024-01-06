@@ -47,7 +47,8 @@ public class StorageService
 //									new Image(image2.getInputStream()))).build());
 						.image_conv(Imgtobytes(image_stegan)).build());
 		if(image_data!=null)
-			return "Image "+image1.getOriginalFilename()+" and "+image2.getOriginalFilename()+" uploaded successfully!";
+			return image1.getOriginalFilename()+" and "+image2.getOriginalFilename()+" uploaded successfully!\n"+
+					"Sshhh... I have generated your unique id -> "+image_data.getId()+" (:\nRemember it to download your encrypted image!";
 		return null;
 	}
 	
