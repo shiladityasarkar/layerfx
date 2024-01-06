@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
-
+import javafx.scene.image.Image;
 import com.shiladitya.layerfx.service.StorageService;
 
 @SpringBootApplication
@@ -37,7 +37,7 @@ public class LayerfxApplication
 	public ResponseEntity<?> downloadImage(@PathVariable int image_name)
 	{
 		byte[] downloaded_image = service.download_image(image_name);
-		return ResponseEntity.status(HttpStatus.OK).contentType(MediaType.valueOf("image/jpg"))
+		return ResponseEntity.status(HttpStatus.OK).contentType(MediaType.valueOf("image/jpeg"))
 				.body(downloaded_image);
 	}
 	public static void main(String[] args)

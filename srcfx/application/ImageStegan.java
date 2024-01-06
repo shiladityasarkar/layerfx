@@ -61,7 +61,7 @@ public class ImageStegan extends Application {
     //                              98  7654 3210
     // ---- ----, 1111 ----, 1111 ----, 1111 ----
 
-    private Image embed(Image target, Image source) {
+    public Image embed(Image target, Image source) {
         WritableImage result = new WritableImage(IMAGE_W, IMAGE_H);
 
         int[] targetBitIndices = new int[] { 0, 1, 2, 8, 9, 10, 16, 17, 18, 24, 25, 26 };
@@ -91,7 +91,7 @@ public class ImageStegan extends Application {
         return result;
     }
 
-    private Image extract(Image embedded) {
+    public Image extract(Image embedded) {
         WritableImage result = new WritableImage(IMAGE_W, IMAGE_H);
 
         int[] targetBitIndices = new int[] { 0, 1, 2, 8, 9, 10, 16, 17, 18, 24, 25, 26 };
