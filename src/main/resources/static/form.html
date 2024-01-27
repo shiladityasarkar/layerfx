@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="form.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Shade&family=Cabin+Sketch:wght@700&family=Caveat:wght@600;700&family=Chakra+Petch&family=Lobster&family=Poppins:wght@100;200;300;400;500;600;700&family=Yesteryear&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
+		<title>Encrypt</title>
+        <style>
+            *{
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    background-color: #151010;
+  }
+  
+ ::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-image: linear-gradient(180deg, #7b3502 0%, #fe0202 99%);
+    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+  }
+body{
+    width:100%;
+    height:100vh; 
+    background-image:  radial-gradient(rgba(2, 2, 0, 0.452),rgba(0, 0, 0, 0.6)), url(imagesused/bg16.png);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    position: relative;
+    background-attachment: fixed;
+}
+.header{
+    margin-bottom: 30px;
+    height:150px;
+}
+.navbar{
+    width:100%;
+    height:15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size:1.1rem;
+    font-family: 'Chakra Petch', sans-serif;
+
+}
+.logo{
+    width:200px;
+    height:200px;
+    padding-top: 70px;
+    padding-left: 20px;
+}
+nav{
+    flex:1;
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin:0px 20px;
+    color:white;
+    font-weight: 500;
+    justify-content: space-between;
+    text-align: right;
+    position:relative;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color:#ffffff;
+
+}
+nav ul li a:hover {
+    text-shadow: 4px 4px 6px #e5ff00; /* Adjust the shadow offset and size as needed */
+}
+h1{
+    color:black;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: bold;
+    background-color: #fff;
+    text-align: center;
+    font-size: 40px;
+    width:650px;
+    border-radius: 30px;
+    margin-bottom: 80px;
+}
+.datainput{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:100vh;
+    transform: translateY(-100px);
+}
+.contain{
+    background-color: #fdfbfb4b;
+    padding: 20px 20px;
+    width:650px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px 2px #ff5100, 
+    0 0 6px 5px #bc800f,
+    0 0 6px 5px #af1f1f;
+}
+#myForm {
+
+    max-width: 400px; 
+    margin: 0 auto; 
+}
+
+
+
+label {
+    display: block;
+    margin-bottom: 8px; 
+}
+
+.custom-file-upload {
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: #0b0b0a;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #c65606; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; 
+}
+input[type="file"] + label::after {
+    content: 'Choose File: No file chosen';
+    color: #fff; /* Set the color to white */
+}
+.footer{
+    width:100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #d84505;
+    border-top: 3px solid black;
+    background-size: cover;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.footer p{
+    font-size: 15px;
+    color: #000000;
+}
+.icons .fa{
+    margin:0 10px;
+    cursor:pointer;
+    padding:12px 0;
+    text-decoration:none;
+}
+.icons a i {
+    text-decoration: none;
+    color: black;
+}
+
+.logo1{
+    width:150px;
+    cursor:pointer;
+    padding-bottom: -20px;
+    justify-content: center;
+}
+.name p{
+    font-size: 13px;
+    font-family: Poppins;
+}
+        </style>
+	</head>
+	<body>
+        <div class="header">
+            <div class="navbar">
+                <a href="index.html"><img src="imagesused/log2.png" class="logo"></a>
+    
+                <nav>
+                    <ul>
+                        <li><a href="home.html"> BACK HOME</a></li>
+                        <li></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        </div>
+<div class="datainput">
+        <h1>CREATE YOUR ENCRYPTED IMAGE</h1>    
+    <div class="contain">
+        <form id="myForm" action="http://localhost:8080/image" method="POST" enctype="multipart/form-data">
+            <label for="imageFile1" class="custom-file-upload">Upload Image 1:</label>
+            <input type="file" id="image1" name="image1" accept="image/*" required>
+            <br><br>
+            <label for="imageFile2" class="custom-file-upload">Upload Image 2:</label>
+            <input type="file" id="image2" name="image2" accept="image/*" required>
+            <br><br>
+            <center><input type="submit" value="Upload"></center>
+        </form>
+    </div>
+</div>
+
+
+<section class="footer">
+    <img src="imagesused/log2.png" class="logo1">
+        <p>&copy;&nbsp;All Rights Reserved. Join Us and Dive Into the World of Secrecy!</p>
+        <div class="icons">
+            <a href="home.html"><i class="fa fa-home" aria-hidden="true"></i>  </a>
+        </div>
+
+<b><div class="name"><p>Made by Shiladitya Sarkar & Asmita Mondal</p></div></b>
+        </section>
+
+<script>
+    document.getElementById('myForm').addEventListener('submit', function(e) {
+        e.preventDefault(); // Prevent default form submission
+
+        const formData = new FormData();
+
+        // Get the files from the file input fields
+        const fileInput1 = document.getElementById('image1').files[0];
+        const fileInput2 = document.getElementById('image2').files[0];
+
+        // Append the files to FormData with 'image1' and 'image2' keys
+        formData.append('image1', fileInput1);
+        formData.append('image2', fileInput2);
+        // Construct the request
+        const url = 'http://localhost:8080/image';
+        const options = {
+            method: 'POST',
+            body: formData,
+        };
+
+        // Set up the request headers to indicate multipart form data
+        options.headers = new Headers();
+        options.headers.append('enctype', 'multipart/form-data');
+
+        // Make the POST request
+        fetch(url, options)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text(); 
+            })
+            .then(data => {
+                alert(data);
+                document.getElementById('myForm').reset();
+                // Handle the response from the server here
+            })
+            .catch(error => {
+                console.error('There was a problem with the request:', error);
+                // Handle errors here
+            });
+           });
+    </script>
+	</body>
+</html>

@@ -1,7 +1,7 @@
 package com.shiladitya.layerfx.entity;
 
-import org.hibernate.annotations.JdbcTypeCode;
-import org.hibernate.type.SqlTypes;
+//import org.hibernate.annotations.JdbcTypeCode;
+//import org.hibernate.type.SqlTypes;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -14,7 +14,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import javafx.scene.image.Image;
+//import javafx.scene.image.Image;
 
 @Entity
 @Table(name="ImageData")
